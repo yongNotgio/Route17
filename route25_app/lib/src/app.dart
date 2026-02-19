@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 
+import 'services/route_repository.dart';
 import 'screens/home_screen.dart';
 
 class Route25App extends StatelessWidget {
-  const Route25App({super.key});
+  const Route25App({
+    super.key,
+    required this.repository,
+  });
+
+  final RouteRepository repository;
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +20,7 @@ class Route25App extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF0F766E)),
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: HomeScreen(repository: repository),
     );
   }
 }
-
