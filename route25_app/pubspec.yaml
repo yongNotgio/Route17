@@ -12,6 +12,8 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter_map: ^6.2.1
   latlong2: ^0.9.1
+  supabase_flutter: ^2.8.0
+  geolocator: ^12.0.0
 
 dev_dependencies:
   flutter_test:
@@ -22,4 +24,3 @@ flutter:
   uses-material-design: true
   assets:
     - assets/data/prd_routes_dataset.json
-
